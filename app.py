@@ -3,7 +3,7 @@ import logging
 from flask import Flask
 from slack import WebClient
 from slackeventsapi import SlackEventAdapter
-from onboarding_tutorial import OnboardingTutorial
+from prompt_creator import make_future_prompt
 
 # Initialize a Flask app to host the events adapter
 app = Flask(__name__)
